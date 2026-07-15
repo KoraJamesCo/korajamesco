@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story — Kora James & Co.</title>
+<meta name="description" content="Meet Kirsten Reed, the founder behind Kora James & Co. — built from a mother's search for a baby skincare product she could actually trust.">
+<link rel="canonical" href="https://korajamesco.com/founder.html">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kora James & Co.">
+<meta property="og:title" content="Our Story — Kora James & Co.">
+<meta property="og:description" content="Meet Kirsten Reed, the founder behind Kora James & Co. — built from a mother's search for a baby skincare product she could actually trust.">
+<meta property="og:url" content="https://korajamesco.com/founder.html">
+<meta property="og:image" content="https://korajamesco.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Story — Kora James & Co.">
+<meta name="twitter:description" content="Meet Kirsten Reed, the founder behind Kora James & Co. — built from a mother's search for a baby skincare product she could actually trust.">
+<meta name="twitter:image" content="https://korajamesco.com/assets/og-image.png">
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"name": "Kora James & Co.",
+"url": "https://korajamesco.com/",
+"logo": "https://korajamesco.com/assets/logo.png",
+"sameAs": ["https://instagram.com/korajamesco"],
+"founder": { "@type": "Person", "name": "Kirsten Reed" },
+"description": "Clean, intentional baby skincare built for the most delicate skin on earth."
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=DM+Sans:wght@300;400&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+--dark: #1e0d04;
+--cream: #faf6f1;
+--parchment: #e8ddd3;
+--brown: #4b2b1e;
+--copper: #b07a5e;
+--body-dark: #d9cec4;
+--body-light: #4b2b1e;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--body-light); overflow-x: hidden; }
+
+/* ── NAV ── */
+nav {
+position: fixed;
+top: 0; left: 0; right: 0;
+z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 60px;
+background: rgba(30,13,4,0.95);
+backdrop-filter: blur(8px);
+border-bottom: 1px solid rgba(176,122,94,0.2);
+}
+
+nav img.nav-logo { width: 140px; height: auto; filter: brightness(0) invert(1); opacity: 0.95; }
+
+.nav-links { display: flex; gap: 36px; align-items: center; }
+
+.nav-links a {
+font-family: 'Montserrat', sans-serif;
+font-size: 11px; font-weight: 600;
+letter-spacing: 0.22em; text-transform: uppercase;
+color: var(--body-dark); text-decoration: none;
+opacity: 0.8; transition: opacity 0.2s;
+}
+.nav-links a:hover { opacity: 1; color: var(--copper); }
+
+.nav-cta {
+font-family: 'Montserrat', sans-serif;
+font-size: 11px; font-weight: 600;
+letter-spacing: 0.22em; text-transform: uppercase;
+color: var(--copper); text-decoration: none;
+border: 1px solid var(--copper);
+padding: 10px 24px; border-radius: 999px;
+transition: all 0.2s;
+}
+.nav-cta:hover { background: var(--copper); color: var(--cream); }
+
+/* Hamburger */
+.hamburger {
+display: none;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+padding: 4px;
+}
+.hamburger span {
+display: block; width: 24px; height: 1.5px;
+background: var(--body-dark);
+transition: all 0.3s;
+}
+
+.mobile-menu {
+display: none;
+position: fixed;
+top: 0; left: 0; right: 0; bottom: 0;
+background: var(--dark);
+z-index: 999;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 36px;
+}
+.mobile-menu.open { display: flex; }
+
+.mobile-menu a {
+font-family: 'Montserrat', sans-serif;
+font-size: 14px; font-weight: 600;
+letter-spacing: 0.28em; text-transform: uppercase;
+color: var(--body-dark); text-decoration: none;
+opacity: 0.85;
+}
+.mobile-menu a:hover { color: var(--copper); }
+
+.mobile-menu .close-btn {
+position: absolute;
+top: 28px; right: 28px;
+font-size: 28px; color: var(--body-dark);
+cursor: pointer; background: none; border: none;
+line-height: 1;
+}
+
+.mobile-menu .nav-cta {
+margin-top: 8px;
+font-size: 13px;
+padding: 14px 36px;
+}
+
+/* ── HERO ── */
+.hero {
+background: var(--dark);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+overflow: hidden;
+padding: 140px 60px 100px;
+text-align: center;
+}
+
+.hero::before {
+content: '';
+position: absolute; inset: 0;
+background: radial-gradient(ellipse at center, rgba(176,122,94,0.12) 0%, transparent 65%);
+pointer-events: none;
+}
+
+.hero-rule-top, .hero-rule-bottom {
+position: absolute; left: 80px; right: 80px; height: 1px;
+background: linear-gradient(to right, transparent, rgba(176,122,94,0.4) 20%, rgba(176,122,94,0.4) 80%, transparent);
+}
+.hero-rule-top { top: 100px; }
+.hero-rule-bottom { bottom: 60px; }
+
+.hero-content { display: flex; flex-direction: column; align-items: center; max-width: 900px; position: relative; z-index: 2; }
+
+.hero-eyebrow {
+font-family: 'Montserrat', sans-serif;
+font-size: 11px; font-weight: 600;
+letter-spacing: 0.36em; text-transform: uppercase;
+color: var(--copper); margin-bottom: 32px;
+}
+
+.hero-logo { width: 280px; height: auto; filter: brightness(0) invert(1); opacity: 0.97; margin-bottom: 48px; }
+
+.hero-headline {
+font-family: 'Cormorant Garamond', serif;
+font-weight: 300; font-size: 72px;
+line-height: 1.0; color: var(--cream);
+margin-bottom: 32px; letter-spacing: -0.01em;
+}
+.hero-headline em { font-style: italic; color: var(--copper); }
+
+.hero-divider { display: flex; align-items: center; gap: 20px; width: 320px; margin-bottom: 32px; }
+.hero-divider-line { flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--copper)); }
+.hero-divider-line.right { background: linear-gradient(to left, transparent, var(--copper)); }
+.hero-divider-diamond { width: 5px; height: 5px; background: var(--copper); transform: rotate(45deg); flex-shrink: 0; }
+
+.hero-sub {
+font-family: 'DM Sans', sans-serif;
+font-size: 18px; font-weight: 300;
+line-height: 1.7; color: var(--body-dark);
+max-width: 560px; margin-bottom: 48px; opacity: 0.85;
+}
+
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+
+.btn-primary {
+font-family: 'Montserrat', sans-serif;
+font-size: 12px; font-weight: 600;
+letter-spacing: 0.22em; text-transform: uppercase;
+color: var(--dark); background: var(--copper);
+padding: 16px 36px; border-radius: 999px;
+text-decoration: none; border: none; cursor: pointer;
+transition: all 0.2s;
+}
+.btn-primary:hover { background: #c4926e; }
+
+.btn-outline {
+font-family: 'Montserrat', sans-serif;
+font-size: 12px; font-weight: 600;
+letter-spacing: 0.22em; text-transform: uppercase;
+color: var(--copper); background: transparent;
+padding: 16px 36px; border-radius: 999px;
+text-decoration: none; border: 1.5px solid var(--copper);
+cursor: pointer; transition: all 0.2s;
+}
+.btn-outline:hover { background: var(--copper); color: var(--dark); }
+
+/* ── SHARED SECTION ── */
+section { padding: 100px 60px; }
+
+.section-eyebrow {
+display: flex; align-items: center; gap: 14px;
+font-family: 'Montserrat', sans-serif;
+font-size: 11px; font-weight: 600;
+letter-spacing: 0.28em; text-transform: uppercase;
+color: var(--copper); margin-bottom: 20px;
+}
+.section-eyebrow::before {
+content: ''; display: block;
+width: 28px; height: 1.5px; background: var(--copper); flex-shrink: 0;
+}
+
+.section-headline {
+font-family: 'Cormorant Garamond', serif;
+font-weight: 300; font-size: 64px;
+line-height: 1.0; letter-spacing: -0.01em; margin-bottom: 28px;
+}
+.section-headline em { font-style: italic; color: var(--copper); }
+
+.section-rule { width: 52px; height: 2px; background: var(--copper); margin-bottom: 32px; }
+
+.section-body {
+font-size: 19px; font-weight: 300;
+line-height: 1.7; max-width: 580px;
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+/* ── STANDALONE PAGE TOP SPACER (clears fixed nav on pages with no hero) ── */
+.standalone-spacer { height: 108px; }
+@media (max-width: 768px) { .standalone-spacer { height: 92px; } }
+
+
+/* ── PRODUCT ── */
+.product-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 80px;
+align-items: center;
+max-width: 1300px;
+margin: 0 auto;
+}
+
+.product-visual {
+background: var(--parchment);
+aspect-ratio: 3/4;
+display: flex; flex-direction: column;
+align-items: center; justify-content: center;
+border: 1px solid #d5ccc4;
+gap: 24px; padding: 60px;
+position: relative;
+overflow: hidden;
+}
+
+.product-visual-art { width: 120px; height: auto; opacity: 0.9; }
+.product-visual-text {
+font-family: 'Cormorant Garamond', serif;
+font-size: 26px; font-style: italic;
+font-weight: 300; color: var(--copper);
+text-align: center;
+}
+.product-visual-sub {
+font-family: 'Montserrat', sans-serif;
+font-size: 10px; font-weight: 600;
+letter-spacing: 0.28em; text-transform: uppercase;
+color: var(--brown); opacity: 0.5;
+}
+
+.product-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+.pill {
+font-family: 'DM Sans', sans-serif;
+font-size: 14px; font-weight: 300;
+padding: 8px 18px; border-radius: 999px;
+border: 1.5px solid var(--copper);
+color: var(--copper); background: rgba(176,122,94,0.07);
+}
+
+/* ── FOUNDER ── */
+.founder-section {
+background: var(--dark);
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0; align-items: stretch; padding: 0;
+}
+
+.founder-photo {
+width: 100%; height: 100%; min-height: 650px;
+object-fit: cover; object-position: center top; display: block;
+}
+
+.founder-content {
+padding: 80px 72px;
+display: flex; flex-direction: column; justify-content: center;
+}
+
+.founder-name {
+font-family: 'Cormorant Garamond', serif;
+font-weight: 300; font-size: 60px;
+line-height: 0.95; color: var(--cream); margin-bottom: 8px;
+}
+.founder-name em { font-style: italic; color: var(--copper); }
+
+.founder-title {
+font-family: 'Montserrat', sans-serif;
+font-size: 11px; font-weight: 600;
+letter-spacing: 0.26em; text-transform: uppercase;
+color: var(--copper); margin-bottom: 28px;
+}
+
+.founder-rule { width: 44px; height: 2px; background: var(--copper); margin-bottom: 28px; }
+
+.founder-body {
+font-size: 18px; font-weight: 300;
+line-height: 1.75; color: var(--body-dark); margin-bottom: 24px;
+}
+
+.founder-signature { height: 23px; width: auto; filter: brightness(0) invert(1); opacity: 0.85; margin-bottom: 32px; }
+
+.founder-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.founder-tag {
+font-family: 'DM Sans', sans-serif;
+font-size: 13px; font-weight: 300;
+padding: 8px 18px; border-radius: 999px;
+border: 1px solid rgba(176,122,94,0.5);
+color: var(--copper); background: rgba(176,122,94,0.08);
+}
+
+/* ── FAQ ── */
+.faq-section {
+background: var(--cream);
+}
+.faq-list {
+max-width: 800px; margin: 0 auto;
+}
+.faq-item {
+border-bottom: 1px solid #d5ccc4;
+padding: 28px 0;
+}
+.faq-item:first-child { border-top: 1px solid #d5ccc4; }
+.faq-question {
+font-family: 'Cormorant Garamond', serif;
+font-size: 26px; font-weight: 300; font-style: italic;
+color: var(--brown); margin-bottom: 12px;
+}
+.faq-answer {
+font-family: 'DM Sans', sans-serif;
+font-size: 16px; font-weight: 300;
+line-height: 1.7; color: var(--body-light); opacity: 0.85;
+max-width: 640px;
+}
+
+/* ── WAITLIST ── */
+.waitlist-section {
+background: var(--dark); text-align: center;
+padding: 100px 60px; position: relative; overflow: hidden;
+}
+.waitlist-section::before {
+content: ''; position: absolute; inset: 0;
+background: radial-gradient(ellipse at center, rgba(176,122,94,0.10) 0%, transparent 65%);
+pointer-events: none;
+}
+.waitlist-section .section-eyebrow { justify-content: center; }
+.waitlist-section .section-eyebrow::before { display: none; }
+.waitlist-section .section-headline { color: var(--cream); }
+.waitlist-section .section-body { color: var(--body-dark); margin: 0 auto 40px; }
+
+.waitlist-form {
+display: flex; gap: 0;
+max-width: 480px; margin: 0 auto;
+position: relative; z-index: 2;
+}
+
+.waitlist-form input {
+flex: 1;
+font-family: 'DM Sans', sans-serif;
+font-size: 15px; font-weight: 300;
+padding: 16px 24px;
+background: rgba(250,246,241,0.08);
+border: 1px solid rgba(176,122,94,0.4);
+border-right: none; color: var(--cream); outline: none;
+border-radius: 999px 0 0 999px;
+}
+.waitlist-form input::placeholder { color: rgba(217,206,196,0.5); }
+
+.waitlist-form button {
+font-family: 'Montserrat', sans-serif;
+font-size: 11px; font-weight: 700;
+letter-spacing: 0.2em; text-transform: uppercase;
+padding: 16px 28px; background: var(--copper);
+color: var(--dark); border: none; cursor: pointer;
+border-radius: 0 999px 999px 0; transition: background 0.2s;
+white-space: nowrap;
+}
+.waitlist-form button:hover { background: #c4926e; }
+.waitlist-form button:disabled { opacity: 0.6; cursor: default; }
+
+.waitlist-note {
+margin-top: 18px; position: relative; z-index: 2;
+font-family: 'DM Sans', sans-serif;
+font-size: 13px; font-weight: 300; font-style: italic;
+color: var(--copper); opacity: 0.75;
+}
+
+.waitlist-status {
+margin-top: 18px; position: relative; z-index: 2;
+font-family: 'DM Sans', sans-serif;
+font-size: 14px; font-weight: 300;
+color: var(--copper); min-height: 20px;
+}
+
+.waitlist-instagram { margin-top: 24px; position: relative; z-index: 2; }
+.waitlist-instagram a {
+font-family: 'Montserrat', sans-serif;
+font-size: 11px; font-weight: 600;
+letter-spacing: 0.22em; text-transform: uppercase;
+color: var(--copper); text-decoration: none; opacity: 0.8;
+}
+.waitlist-instagram a:hover { opacity: 1; }
+
+/* ── FOOTER ── */
+footer {
+background: var(--dark);
+border-top: 1px solid rgba(176,122,94,0.2);
+padding: 44px 60px;
+display: flex; justify-content: space-between; align-items: center;
+flex-wrap: wrap; gap: 20px;
+}
+
+footer img { width: 130px; filter: brightness(0) invert(1); opacity: 0.7; }
+
+.footer-center {
+font-family: 'Montserrat', sans-serif;
+font-size: 10px; font-weight: 500;
+letter-spacing: 0.22em; text-transform: uppercase;
+color: var(--body-dark); opacity: 0.5; text-align: center;
+}
+
+.footer-right {
+font-family: 'Montserrat', sans-serif;
+font-size: 10px; font-weight: 600;
+letter-spacing: 0.22em; text-transform: uppercase;
+color: var(--copper); opacity: 0.7;
+}
+.footer-right a { color: inherit; text-decoration: none; }
+
+/* ══════════════════════════════════════
+MOBILE RESPONSIVE
+══════════════════════════════════════ */
+@media (max-width: 768px) {
+
+nav { padding: 18px 24px; }
+nav img.nav-logo { width: 120px; }
+.nav-links { display: none; }
+.hamburger { display: flex; }
+
+.hero { padding: 120px 28px 80px; }
+.hero-rule-top { top: 80px; left: 24px; right: 24px; }
+.hero-rule-bottom { bottom: 40px; left: 24px; right: 24px; }
+.hero-logo { width: 200px; margin-bottom: 36px; }
+.hero-headline { font-size: 48px; }
+.hero-sub { font-size: 16px; }
+.hero-divider { width: 240px; }
+.hero-actions { flex-direction: column; width: 100%; }
+.btn-primary, .btn-outline { width: 100%; text-align: center; padding: 16px 24px; }
+
+section { padding: 64px 28px; }
+.section-headline { font-size: 44px; }
+.section-body { font-size: 17px; }
+
+.product-grid { grid-template-columns: 1fr; gap: 40px; }
+.product-visual { aspect-ratio: 4/3; padding: 40px; }
+
+.founder-section { grid-template-columns: 1fr; }
+.founder-photo { min-height: 420px; object-position: center 20%; }
+.founder-content { padding: 52px 28px; }
+.founder-name { font-size: 48px; }
+.founder-body { font-size: 16px; }
+
+.faq-question { font-size: 22px; }
+.faq-answer { font-size: 15px; }
+
+.waitlist-section { padding: 64px 24px; }
+.waitlist-form { flex-direction: column; gap: 12px; }
+.waitlist-form input {
+border-right: 1px solid rgba(176,122,94,0.4);
+border-radius: 999px;
+text-align: center;
+}
+.waitlist-form button {
+border-radius: 999px;
+padding: 16px 24px;
+width: 100%;
+}
+
+footer { padding: 36px 24px; flex-direction: column; text-align: center; gap: 16px; }
+}
+
+@media (max-width: 480px) {
+.hero-headline { font-size: 38px; }
+.section-headline { font-size: 36px; }
+.founder-name { font-size: 40px; }
+.founder-photo { min-height: 380px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+.reveal { opacity: 1; transform: none; transition: none; }
+}
+</style>
+</head>
+<body>
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+<button class="close-btn" onclick="toggleMenu()">✕</button>
+<a href="index.html#product" onclick="toggleMenu()">The Mist</a>
+<a href="founder.html" onclick="toggleMenu()">Our Story</a>
+<a href="faq.html" onclick="toggleMenu()">FAQ</a>
+<a href="https://instagram.com/korajamesco" target="_blank">@korajamesco</a>
+<a href="index.html#waitlist" class="nav-cta" onclick="toggleMenu()">Join Waitlist</a>
+</div>
+
+
+
+<!-- NAV -->
+<nav>
+<a href="index.html" aria-label="Kora James & Co. — Home"><img class="nav-logo" src="assets/logo.png" alt="Kora James & Co."></a>
+<div class="nav-links">
+<a href="index.html#product">The Mist</a>
+<a href="founder.html">Our Story</a>
+<a href="faq.html">FAQ</a>
+<a href="https://instagram.com/korajamesco" target="_blank">@korajamesco</a>
+<a href="index.html#waitlist" class="nav-cta">Join Waitlist</a>
+</div>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</div>
+</nav>
+
+
+
+<div class="standalone-spacer"></div>
+
+<!-- FOUNDER -->
+<div class="founder-section" id="founder">
+<img class="founder-photo reveal" src="assets/founder.jpg" alt="Kirsten Reed — Founder of Kora James & Co.">
+<div class="founder-content reveal">
+<div class="section-eyebrow" style="color: var(--copper);">Meet the Founder</div>
+<div class="founder-name">Kirsten<br><em>Reed</em></div>
+<div class="founder-title">Founder · Kora James & Co.</div>
+<div class="founder-rule"></div>
+<p class="founder-body">I started Kora James & Co. because I couldn't find a baby skincare product I actually trusted. I kept flipping bottles over, reading ingredients I couldn't pronounce, and wondering why "gentle" was just a marketing word.<br><br>So I decided to build something different — something I would actually put on my own baby's skin. And yours.</p>
+<img class="founder-signature" src="assets/signature.png" alt="Kirsten Reed signature">
+<div class="founder-tags">
+<div class="founder-tag">Navy Veteran</div>
+<div class="founder-tag">Mom & Wife</div>
+<div class="founder-tag">Collegiate Athlete</div>
+<div class="founder-tag">Skincare Obsessed</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- FOOTER -->
+<footer>
+<a href="index.html" aria-label="Kora James & Co. — Home"><img src="assets/logo.png" alt="Kora James & Co."></a>
+<div class="footer-center">© 2026 Kora James & Co. LLC · All rights reserved</div>
+<div class="footer-right"><a href="https://instagram.com/korajamesco" target="_blank">@korajamesco</a></div>
+</footer>
+
+
+
+<script>
+function toggleMenu() {
+const menu = document.getElementById('mobileMenu');
+menu.classList.toggle('open');
+}
+
+// Scroll reveal (with fail-safes so content is never stuck invisible)
+const revealEls = document.querySelectorAll('.reveal');
+try {
+if ('IntersectionObserver' in window) {
+const io = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('in-view');
+io.unobserve(entry.target);
+}
+});
+}, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
+revealEls.forEach(el => io.observe(el));
+} else {
+revealEls.forEach(el => el.classList.add('in-view'));
+}
+} catch (err) {
+revealEls.forEach(el => el.classList.add('in-view'));
+}
+// Safety net: whatever hasn't revealed itself after 2.5s (slow devices,
+// fast scrolling, unusual viewports) is force-shown so nothing stays hidden.
+setTimeout(() => {
+revealEls.forEach(el => el.classList.add('in-view'));
+}, 2500);
+
+// Waitlist form submission (Formspree via fetch, no page reload)
+const waitlistForm = document.getElementById('waitlistForm');
+const waitlistStatus = document.getElementById('waitlistStatus');
+const waitlistSubmit = document.getElementById('waitlistSubmit');
+
+if (waitlistForm) {
+waitlistForm.addEventListener('submit', function (e) {
+e.preventDefault();
+const email = document.getElementById('waitlistEmail').value;
+waitlistSubmit.disabled = true;
+waitlistSubmit.textContent = 'Joining...';
+waitlistStatus.textContent = '';
+
+fetch(waitlistForm.action, {
+method: 'POST',
+headers: { 'Accept': 'application/json' },
+body: new FormData(waitlistForm)
+}).then(response => {
+if (response.ok) {
+waitlistStatus.textContent = "You're on the list — thank you! We'll be in touch soon.";
+waitlistForm.reset();
+} else {
+response.json().then(data => {
+const msg = (data && data.errors && data.errors[0] && data.errors[0].message) || 'Something went wrong — please try again.';
+waitlistStatus.textContent = msg;
+}).catch(() => {
+waitlistStatus.textContent = 'Something went wrong — please try again.';
+});
+}
+}).catch(() => {
+waitlistStatus.textContent = 'Something went wrong — please check your connection and try again.';
+}).finally(() => {
+waitlistSubmit.disabled = false;
+waitlistSubmit.textContent = 'Join Waitlist';
+});
+});
+}
+</script>
+
+</body>
+</html>
