@@ -43,13 +43,19 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
---dark: #1e0d04;
---cream: #faf6f1;
---parchment: #e8ddd3;
---brown: #4b2b1e;
---copper: #b07a5e;
---body-dark: #d9cec4;
---body-light: #4b2b1e;
+--dark: #2C1B12;
+--cream: #F4F1EB;
+--parchment: #FFFDF9;
+--brown: #2C1B12;
+--copper: #B68235;
+--gold-deep: #7D5411;
+--hairline: #E2DACB;
+--paper: #FFFDF9;
+--bone: #F4F1EB;
+--cacao: #2C1B12;
+--gold: #B68235;
+--body-dark: #FFFDF9;
+--body-light: #2C1B12;
 }
 
 html { scroll-behavior: smooth; }
@@ -64,9 +70,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 20px 60px;
-background: rgba(30,13,4,0.95);
+background: rgba(44,27,18,0.95);
 backdrop-filter: blur(8px);
-border-bottom: 1px solid rgba(176,122,94,0.2);
+border-bottom: 1px solid rgba(182,130,53,0.2);
 }
 
 nav img.nav-logo { width: 140px; height: auto; filter: brightness(0) invert(1); opacity: 0.95; }
@@ -92,7 +98,7 @@ border: 1px solid var(--copper);
 padding: 10px 24px; border-radius: 2px;
 transition: all 0.2s;
 }
-.nav-cta:hover { background: var(--copper); color: var(--cream); }
+.nav-cta:hover { background: var(--paper); color: var(--cacao); }
 
 /* Hamburger */
 .hamburger {
@@ -148,12 +154,12 @@ padding: 14px 36px;
 font-family: 'Montserrat', sans-serif;
 font-size: 12px; font-weight: 600;
 letter-spacing: 0.22em; text-transform: uppercase;
-color: var(--dark); background: var(--copper);
+color: var(--paper); background: var(--cacao);
 padding: 16px 36px; border-radius: 2px;
 text-decoration: none; border: none; cursor: pointer;
 transition: all 0.2s;
 }
-.btn-primary:hover { background: #c4926e; }
+.btn-primary:hover { background: #4a3320; }
 
 /* ── SHARED SECTION ── */
 section { padding: 100px 60px; }
@@ -177,7 +183,7 @@ font-weight: 300; font-size: 60px;
 line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 20px;
 text-align: center;
 }
-.section-headline em { font-style: italic; color: var(--copper); }
+.section-headline em { font-style: italic; color: var(--gold-deep); }
 
 .section-rule { width: 52px; height: 2px; background: var(--copper); margin: 0 auto 32px; }
 
@@ -215,13 +221,13 @@ width: 100%; margin-top: 24px;
 .quiz-option {
 display: block; width: 100%; box-sizing: border-box;
 text-align: left; padding: 20px 24px;
-background: #fff; border: 1px solid #d5ccc4; border-radius: 2px;
+background: var(--paper); border: 1px solid #E2DACB; border-radius: 2px;
 font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 300;
 color: var(--body-light); cursor: pointer;
 transition: border-color 0.2s, background 0.2s;
 }
 .quiz-option:hover, .quiz-option:focus-visible {
-border-color: var(--copper); background: rgba(176,122,94,0.06); outline: none;
+border-color: var(--copper); background: rgba(182,130,53,0.06); outline: none;
 }
 
 .quiz-actions { display: flex; align-items: center; justify-content: center; margin-top: 28px; }
@@ -250,7 +256,7 @@ font-family: 'DM Sans', sans-serif; font-size: 17px; font-weight: 300;
 line-height: 1.7; color: var(--body-light); opacity: 0.85;
 text-align: center; max-width: 480px; margin: 0 auto;
 }
-.quiz-divider { width: 100%; height: 1px; background: #d5ccc4; border: none; margin: 32px 0 24px; }
+.quiz-divider { width: 100%; height: 1px; background: #E2DACB; border: none; margin: 32px 0 24px; }
 .quiz-pair {
 font-family: 'DM Sans', sans-serif; font-size: 15px; line-height: 1.6;
 color: var(--body-light); opacity: 0.85; text-align: center;
@@ -259,7 +265,7 @@ color: var(--body-light); opacity: 0.85; text-align: center;
 
 .quiz-routine { display: flex; flex-direction: column; width: 100%; text-align: left; margin-top: 12px; }
 .quiz-routine-item { display: flex; gap: 18px; padding: 22px 0; }
-.quiz-routine-item + .quiz-routine-item { border-top: 1px solid #d5ccc4; }
+.quiz-routine-item + .quiz-routine-item { border-top: 1px solid #E2DACB; }
 .quiz-routine-num {
 font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px;
 color: var(--copper); opacity: 0.55; min-width: 24px;
@@ -283,7 +289,7 @@ color: var(--body-light); opacity: 0.85;
 /* ── FOOTER ── */
 footer {
 background: var(--dark);
-border-top: 1px solid rgba(176,122,94,0.2);
+border-top: 1px solid rgba(182,130,53,0.2);
 padding: 44px 60px;
 display: flex; justify-content: space-between; align-items: center;
 flex-wrap: wrap; gap: 20px;
